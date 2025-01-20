@@ -37,20 +37,27 @@ Just like building a robot piece by piece, our text converter builds the final o
 ## 📁 Project Structure
 
 ```plaintext
+├── Python/
+│   └── app.py
 ├── C++/
 │   └── main.cpp
 └── Java/
-        ├── Main.java
-        └── rtf/
-                ├── ASCIIConverter.java
-                ├── FontStyle.java
-                ├── RTFReader.java
-                ├── TeXConverter.java
-                ├── TextConverter.java
-                └── TextWidgetConverter.java
+    ├── Main.java
+    └── rtf/
+        ├── ASCIIConverter.java
+        ├── FontStyle.java
+        ├── RTFReader.java
+        ├── TeXConverter.java
+        ├── TextConverter.java
+        └── TextWidgetConverter.java
 ```
 
 ## 🔍 Implementation Details
+
+### Python Implementation [`Source`](./Python)
+- Single file script for simplicity
+- Uses classes to define `TextConverter` and concrete converters
+- Easy-to-read and maintainable code
 
 ### C++ Implementation [`Source`](./C++)
 - Single file modular design with smart pointers
@@ -63,6 +70,10 @@ Just like building a robot piece by piece, our text converter builds the final o
 - Interfaces for `TextConverter` with three concrete implementations
 
 ## 🛠️ How to Run
+
+### Python Version
+1. Navigate to the `Python` directory.
+2. Run the script using Python, e.g., `python app.py`.
 
 ### C++ Version
 1. Navigate to the `C++` directory.
